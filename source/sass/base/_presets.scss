@@ -1,0 +1,148 @@
+// html {
+//   @include desktop {
+//     min-width: 980px;
+//   }
+//   @include tablet {
+//     min-width: 760px;
+//   }
+// }
+html {
+  font-size: $resetFontSize;
+}
+body {
+  // lost-utility: edit;
+  line-height: $lineHeight;
+  font-family: $baseFont;
+  font-size: $baseFontSize;
+  font-family: $baseFont;
+  
+/*  background: rgb(210,255,82);
+ background: -moz-linear-gradient(top,  rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+ background: -webkit-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%);
+ background: linear-gradient(to bottom,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 );
+
+  background: linear-gradient(to bottom,  rgba(210,255,82,.5) 0%,rgba(145,232,66,.5) 100%), 
+  url(img/floral.jpg) no-repeat fixed;
+  background-size: cover; */
+
+  background: url(img/floral.jpg) no-repeat fixed;
+  background-size: cover;
+  // background: $bgColor-footer;
+  // background: #fff;
+}
+p {
+  margin: 2.4rem 0;
+
+  font-size: 2.4rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headerFont;
+  font-weight: bold;
+}
+h1 {
+  margin: 2.4rem 0;
+
+  font-size: 5.4rem;
+}
+h2 {
+  margin: 1.6rem 0;
+
+  font-size: 3.6rem;
+}
+h3 {
+  margin: .8rem 0;
+
+  font-size: 2.4rem;
+}
+h4 {
+  margin: .8rem 0;
+
+  font-size: 1.6rem;
+}
+h5,
+h6 {
+  text-transform: uppercase;
+}
+a {
+  color: blue;
+  text-decoration: none;
+
+  transition: all .5s;
+  &:visited {
+    color: $bgColorFaded;
+  }
+  &:hover {
+    box-shadow: 0 1px 0 $linkHover;
+
+    color: $linkHover;
+  }
+}
+img {
+  max-width: 100%;
+}
+abbr {
+  border-bottom: 1px dotted;
+}
+blockquote {
+  position: relative;
+
+  margin: 2.4rem;
+  padding: 2.4rem;
+  width: 40rem;
+  z-index: 20;
+
+  border: 1px dashed $bgColorLight;
+  border-radius: 1rem;
+
+  font-size: 2.4rem;
+  font-variant: italic;
+
+  background: $txtColor-small;
+}
+/* blockquote:before {
+  content: "8220";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+
+  font-size: 5.6rem;
+  color: $txtColor-small;
+} */
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+// Layout
+.container {
+  max-width: $container;
+  min-width: $container - 24;
+  margin: 0 auto;
+}
+// Tools
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.align-right {
+  float: right;
+}
+.align-left {
+  float: left;
+}
+.align-center {
+  margin: 0 auto;
+}
+.text-right {
+  text-align: right;
+}

@@ -1,0 +1,43 @@
+// _table.scss
+.table {
+	&-schedule {
+		width: 100%;
+
+		font-size: 1.6rem;
+
+		color: $txtColor-inverted;
+
+		&_caption {
+			width: 100%;
+			
+			font-size: 3.6rem;
+			color: inherit;
+
+			background: $bgColor-footer;
+		}
+
+		&_head {
+			background: $bgColorDark;
+			th {
+				padding: 2rem;
+
+				font-size: 1.6rem;
+				font-weight: bold;
+			}
+		}
+		&_body {
+			tr {
+				background: $bgColorLight;
+
+				&:nth-of-type(even) {
+					background: $bgColorFaded;
+				}
+			}
+			td {
+				padding: 2rem;
+
+				text-align: center;
+			}
+		}
+	}
+}

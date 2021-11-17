@@ -1,0 +1,76 @@
+// _config.scss
+
+// Grid settings
+$container: 120rem;
+
+// Font families
+$baseFont: 'Kurale', Georgia, serif;
+$headerFont: 'Kurale', Georgia, serif;
+// $headerFont: Georgia, serif;
+$logoFont: 'Bad Script', cursive;
+// $logoFont: 'Kurale', Georgia, serif;
+// $logoFont: 'Pattaya', sans-serif;
+// $boldFont: ;
+// $italic: ;
+
+// Fontsize
+$resetFontSize: 62.5%;
+$baseFontSize: 1.6rem;
+$lineHeight: 1.5;
+
+// Color
+/* $bgColor: hsl(248,100%,4.71%);
+$bgColorLight: hsla(248,100%,9.83%,.8);
+$bgColorDark: hsla(230,100%,18%,.8);
+$bgColor-header: hsla(230,100%,18%,.4);
+$bgColor-footer: hsla(230,100%,18%,1);
+$txtColor-inverted: hsl(230,100%,100%); */
+
+// Color
+/* $bgColor: hsl(176,100%,4.71%);
+$bgColorLight: hsla(176,100%,84.55,.8);
+$bgColorDark: hsla(177,100%,65.28%,.8);
+$bgColor-header: hsla(177,100%,75.39%,.4);
+$bgColor-footer: #101D31;
+// $bgColor-footer: hsla(177,100%,10%,1);
+$txtColor-inverted: hsl(177,100%,100%); */
+
+// Color
+$bgColor: hsl(176,100%,4.71%);
+$bgColorLight: rgba(49,63,85,.8);
+$bgColorDark: rgba(6,16,31,.8);
+$bgColorFaded: rgba(29,44,67,.8);
+$bgColor-header: rgba(49,63,85,.4);
+$bgColor-footer: rgba(1,7,15,.9);
+// $bgColor-footer: #101D31;
+$txtColor-inverted: hsl(177,100%,100%);
+$txtColor-small: hsl(248, 20%, 80%);
+$txtColor-logo: hsl(177,100%,100%);
+$linkColor: rgb(23,113,255);
+$linkHover: rgb(0,43,110);
+// $linkColor: rgba(6,16,31,1);
+
+// Color flat ui
+/* $bgColor: hsl(176,100%,4.71%);
+$bgColorLight: rgba(49,63,85,.8);
+$bgColorDark: rgba(6,16,31,.8);
+$bgColorFaded: rgba(29,44,67,.8);
+$bgColor-header: rgba(22, 160, 133,.4);
+$bgColor-footer: rgba(44, 62, 80,.9);
+// $bgColor-footer: #101D31;
+$txtColor-inverted: rgba(236, 240, 241,1.0);
+$txtColor-small: rgba(189, 195, 199,1.0);
+$txtColor-logo: rgba(236, 240, 241,1.0); */
+
+/* // fresh and bright
+$bgColor: hsl(176,100%,4.71%);
+$bgColorLight: #f98866;
+$bgColorDark: #ff420e;
+$bgColorFaded: rgba(29,44,67,.8);
+$bgColor-header: #80bd9e;
+$bgColor-footer: #80bd9e;
+// $bgColor-footer: #101D31;
+$txtColor-inverted: hsl(177,100%,100%);
+$txtColor-small: hsl(248, 20%, 80%);
+$txtColor-logo: hsl(177,100%,100%);
+$linkColor: rgba(6,16,31,1); */

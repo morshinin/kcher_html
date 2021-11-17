@@ -1,0 +1,69 @@
+// _header.scss
+.header {
+	// position: fixed;
+	// right: 0;
+	// left: 0;
+	// top: 0;
+
+	margin: 0 0 2.4rem 0;
+	padding: 1.6rem 0;
+
+	background: linear-gradient(rgba(49,63,85,.4), rgba(49,63,85,.4)),
+	url('img/breeze.svg') 7rem center / 13rem no-repeat;
+	
+	z-index: 1111;
+	&_logo {
+		float: left;
+		width: 20%;
+		padding: 0 1rem;
+		margin: 0;
+
+		font-size: 2.4rem;
+		font-family: $logoFont;
+		color: $txtColor-logo;
+		text-shadow: 2px 2px 5px $bgColor-footer;
+		letter-spacing: .2rem;
+
+		& span {
+			// text-transform: uppercase;
+			letter-spacing: .2rem;
+		}
+	}
+	&_nav {
+		float: right;
+		ul {
+			@include listUnstyled;
+		}
+		
+		&-item {
+			float: left;
+			// width: 10%;
+			padding: 0 1.5rem;
+
+			// text-align: center;
+			line-height: 2.4;
+		}
+
+		&-item a {
+			padding: .5rem 0;
+
+			/*border-radius: .5rem;*/
+			border-bottom: 1px solid transparent;
+
+			font-size: 1.3rem;
+			color: $txtColor-inverted;
+			text-shadow: 1px 1px 0 hsla(200,0%,0%,.5);
+			text-decoration: none;
+			// text-transform: uppercase;
+			letter-spacing: .2rem;
+
+			transition: all .5s;
+
+			&:visited,
+			&:hover {
+				border-bottom: 1px solid $txtColor-inverted;
+				border-width: 100%;
+			}
+		}
+	}
+}

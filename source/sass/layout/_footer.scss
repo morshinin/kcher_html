@@ -1,0 +1,30 @@
+// _footer.scss
+.footer {
+	padding: 2.4rem 0;
+
+	text-align: center;
+
+	background: $bgColor-footer;
+	
+	&_social {
+		float: left;
+		&-link {
+			padding: 0 2rem;
+
+			color: hsla(0,0%,100%,.5);
+			
+			transition: color .5;
+			&:hover {
+				color: hsla(248,100%,100%,1);
+			}
+		}
+	}
+
+	&_copyright {
+		float: right;
+		 & small {
+			font-size: 1rem;
+			color: hsl(248, 20%, 40%);
+		}
+	}
+}

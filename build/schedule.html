@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!-- head.jade-->
+  <head>
+    <meta charset="UTF-8">
+    <title>Ксения Чер</title>
+    <meta name="author" content="Михаил Моршинин">
+    <meta name="description" content="Официальный сайт певицы Ксении Чер"><!-- jQuery library (served from Google) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script><!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script><!-- bxSlider CSS file -->
+    <link href="jquery.bxslider.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="initial-scale=1.0">
+  </head>
+  <body>
+    <!-- header.jade-->
+    <header class="header clearfix">
+      <div class="container">
+        <h2 class="header_logo">Ксения <span>Чер</span></h2>
+        <nav class="header_nav">
+          <ul>
+            <li class="header_nav-item"><a href="http://localhost:3000">Главная</a></li>
+            <li class="header_nav-item"><a href="http://localhost:3000/schedule.html">Афиша</a></li>
+            <li class="header_nav-item"><a href="http://localhost:3000/bio.html">Биография</a></li>
+            <li class="header_nav-item"><a href="http://localhost:3000/news.html">Новости</a></li>
+            <li class="header_nav-item"><a href="http://localhost:3000/archive.html">Песни</a></li>
+            <li class="header_nav-item"><a href="http://localhost:3000/single.html">Друзья</a></li>
+            <li class="header_nav-item"><a href="http://localhost:3000/guestbook.html">Гостевая</a></li>
+            <li class="header_nav-item"><a href="http://localhost:3000/contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- content-schedule.jade-->
+    <article class="content-schedule">
+      <div class="container">
+        <table class="table-schedule">
+          <caption class="table-schedule_caption">Афиша</caption>
+          <thead class="table-schedule_head">
+            <tr>
+              <th>Дата</th>
+              <th>Город</th>
+              <th>Место</th>
+              <th>Мероприятие</th>
+            </tr>
+          </thead>
+          <tbody class="table-schedule_body">
+            <tr>
+              <td>01.08.2016</td>
+              <td>Москва</td>
+              <td>Концертный зал</td>
+              <td>Фестиваль</td>
+            </tr>
+            <tr>
+              <td>08.08.2016</td>
+              <td>Москва</td>
+              <td>Спорткомплекс</td>
+              <td>Сольный концерт</td>
+            </tr>
+            <tr>
+              <td>20.08.2016</td>
+              <td>Санкт-Петербург</td>
+              <td>Дворец Культуры</td>
+              <td>Церемония</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+    <footer class="footer clearfix">
+      <div class="container">
+        <div class="footer_social clearfix"><a href="#" class="footer_social-link"><i class="fa fa-vk"></i></a><a href="#" class="footer_social-link"><i class="fa fa-facebook"></i></a><a href="#" class="footer_social-link"><i class="fa fa-odnoklassniki"></i></a><a href="#" class="footer_social-link"><i class="fa fa-at"></i></a></div>
+        <div class="footer_copyright"><small>Все права защищены &copy; 2016</small></div>
+      </div>
+    </footer>
+  </body>
+</html>

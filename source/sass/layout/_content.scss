@@ -1,0 +1,274 @@
+// _content.scss
+.content {
+		&-schedule {
+			padding: 50rem 0 5rem 0;
+			// margin-top: -10rem;
+			width: $container;
+			margin: 0 auto;
+
+			background: url('img/Gmail/1(4).jpg') top / 100% no-repeat;
+			background-size: cover;
+		}
+		&-bio,
+		&-song,
+		&-contact {
+			& .container {
+				padding: 2.4rem 0;
+				
+				// background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)),
+				// url('img/breeze.svg') top left / 200rem no-repeat;
+				background: $txtColor-inverted;
+				// background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)), url('img/Gmail/1(4).jpg') top / cover no-repeat;
+				// background: linear-gradient(rgba(29,44,67,1), hsl(177,100%,100%) 1rem);
+			}
+		}
+		&-song,
+		&-contact {
+			& .container {
+				padding: 2.4rem;
+			}
+		}
+		&-archive {
+		padding: 0;
+
+		& .container {
+			// margin-top: 20rem;
+
+			background: $txtColor-inverted;
+		}
+		
+	}
+}
+.bio {
+	&_img {
+		width: 50%;
+		padding: 2.4rem;
+	}
+	&_title {
+		// width: 50%;
+		// float: left;
+		padding: 2.4rem 1.6rem;
+		margin: 0 0 3.6rem 0;
+
+		color: $txtColor-inverted;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 3px $bgColorDark;
+
+		// background: linear-gradient(rgba(29,44,67,1), rgba(29,64,67,.3));
+		background: $bgColorFaded;
+	}
+	&_text {
+		padding: 0.8rem 2.4rem;
+
+		text-align: justify;
+		
+		&:first-of-type:first-letter {
+			display: block;
+			margin: -5.4rem 1.6rem;
+			padding: 0;
+
+			float: left;
+
+
+			font-size: 16rem;
+		}
+		&:last-of-type {
+			font-style: italic;
+		}
+	}
+}
+.anno {
+	height: 40rem;
+	overflow: hidden;
+	&_img {
+		float: left;
+		width: 50%;
+
+		overflow: hidden;
+	
+		& img {
+			display: block;
+			transition: transform .5s;
+
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+
+		&-reverse {
+			float: right;
+		}
+	}
+
+	&_title {
+		width: 50%;
+		float: right;
+		padding: 0 0 0 2rem;
+		
+		color: $txtColor-inverted;
+
+		background: $bgColor-footer;
+
+		& a {
+			position: relative;
+
+			color: $txtColor-inverted;
+			text-decoration: none;
+
+			transition: color .5s;
+
+			&:visited,
+			&:hover {
+				color: $bgColorLight;
+			}
+		}
+		&-reverse {
+			float: left;
+		}
+	}
+	
+	&_meta {
+		display: block;
+		float: right;
+		width: 50%;
+		padding: 1rem 0 1rem 2rem;
+		// margin: 0 0 0 51%;
+
+		background: $bgColorLight;
+
+		& a {
+			border-bottom: 1px solid transparent;
+
+			color: $txtColor-small;
+			font-size: 1.4rem;
+			text-decoration: none;
+
+			transition: all .5s;
+
+			&:hover {
+				border-bottom: 1px solid;
+			}
+		}
+
+		&-reverse {
+			float: left;
+			// margin: 0 51% 0 0;
+			// padding: 0 0 0 2rem;
+		}
+	}
+	
+	&_excerpt {
+		float: right;
+		width: 50%;
+			padding: 2.4rem 2rem;
+		& p {
+			
+			// margin: 0 0 0 50%;
+
+			font-size: 1.6rem;
+		}
+
+		&-reverse {
+			float: left;
+			// margin: 0 50% 0 0;
+		}
+	}
+}
+// anno end
+// song start
+.song {
+	position: relative;
+	&_header {
+		padding: 2.4rem;
+
+		color: $txtColor-inverted;
+
+		background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), 
+		url('img/28.jpg') top / cover no-repeat;
+	}
+	&_info-link {
+		color: $txtColor-inverted;
+		text-decoration: underline;
+	}
+	&_button {
+		display: inline-block;
+		padding: 1rem 2rem;
+		margin: 1.6rem 0;
+
+		border-radius: 1rem;
+		box-shadow: 2px 2px 5px $bgColor-footer;
+
+		text-decoration: none;
+		color: #fff;
+
+		background: linear-gradient(45deg, $bgColorLight, $bgColorFaded);
+		i {
+			color: white;
+		}
+	}
+	&_sidebar {
+		width: 35%;
+		float: right;
+		margin-top: 2.4rem;
+	}
+	&_section {
+		width: 65%;
+		padding-right: 5rem;
+	}
+}
+.contact {
+	&_section {
+		width: 50%;
+		float: left;
+	}
+	&_sidebar {
+		width: 50%;
+		float: right;
+	}
+	&_text {
+		small {
+			display: block;
+		}
+	}
+}
+.form {
+	&-contact {
+		input {
+			display: block;
+			width: 40rem;
+			margin: 0 0 1.6rem 0;
+			padding: .8rem 1.6rem;
+
+			font-size: 2.4rem;
+
+		}
+		textarea {
+			display: block;
+			width: 40rem;
+			padding: 2.4rem 1.6rem;
+			margin: 0 0 2.4rem 0;
+
+			font-size: 2.4rem;
+		}
+		button {
+			width: 43.2rem;
+			padding: 1.6rem;
+
+			border: 0;
+			border-radius: 1rem;
+			box-shadow: 2px 2px 0 rgba(49,63,85,.4);
+
+			font-size: 2.4rem;
+			color: $txtColor-inverted;
+
+			background: linear-gradient(rgba(49,63,85,.8), rgba(6,16,31,.8));
+
+			cursor: pointer;
+			transition: background 1s;
+			&:hover {
+				background: linear-gradient(rgba(49,63,85,.8), hsl(248, 20%, 20%));
+			}
+		}
+	}
+}
